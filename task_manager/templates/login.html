@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+          crossorigin="anonymous">
+    <title>
+        Войти
+    </title>
+</head>
+<body class="d-flex flex-column min-vh-100">
+<header class="p-3 bg-dark text-white">
+    <div class="container">
+        <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+            <a href="#"
+               class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                     fill="currentColor" class="bi bi-pc-display"
+                     viewBox="0 0 16 16">
+                    <path d="M8 1a1 1 0 0 1 1-1h6a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1V1Zm1 13.5a.5.5 0 1 0 1 0 .5.5 0 0 0-1 0Zm2 0a.5.5 0 1 0 1 0 .5.5 0 0 0-1 0ZM9.5 1a.5.5 0 0 0 0 1h5a.5.5 0 0 0 0-1h-5ZM9 3.5a.5.5 0 0 0 .5.5h5a.5.5 0 0 0 0-1h-5a.5.5 0 0 0-.5.5ZM1.5 2A1.5 1.5 0 0 0 0 3.5v7A1.5 1.5 0 0 0 1.5 12H6v2h-.5a.5.5 0 0 0 0 1H7v-4H1.5a.5.5 0 0 1-.5-.5v-7a.5.5 0 0 1 .5-.5H7V2H1.5Z"/>
+                </svg>
+            </a>
+
+            <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+                <li>
+                    <a href="http://localhost:63342/SC_TaskManager/task_manager/templates/tasks.html"
+                       class="nav-link px-2 text-secondary">Главная
+                        страница</a>
+                </li>
+                <li>
+                    <a href="http://localhost:63342/SC_TaskManager/task_manager/templates/tasks.html"
+                       class="nav-link px-2 text-white">Список
+                        задач</a>
+                </li>
+                <li>
+                    <a href="http://localhost:63342/SC_TaskManager/task_manager/templates/queue.html"
+                       class="nav-link px-2 text-white">Очередь</a>
+                </li>
+            </ul>
+
+            <div class="text-end" id="registerOrLogin">
+                <a href="http://localhost:63342/SC_TaskManager/task_manager/templates/login.html"
+                   class="btn btn-outline-light me-2">
+                    Войти
+                </a>
+                <a href="http://localhost:63342/SC_TaskManager/task_manager/templates/sign_up.html"
+                   class="btn btn-warning">
+                    Зарегистрироваться
+                </a>
+            </div>
+        </div>
+    </div>
+</header>
+<div class="row justify-content-center">
+    <div class="col-md-8 p-5">
+        <div class="card">
+            <div class="card-body">
+                <h1 class="h3 mb-3 fw-normal text-center">Войти на сайт</h1>
+                <div class="mb-3">
+                    <label for="loginField" class="form-label">
+                        Имя пользователя
+                    </label>
+                    <input type="text" class="form-control"
+                           id="inputLogin">
+                </div>
+                <div class="mb-3">
+                    <label for="passwordField" class="form-label">
+                        Пароль
+                    </label>
+                    <input type="password" class="form-control"
+                           id="inputPassword">
+                </div>
+                <div class="mb-3">
+                    <button id="signIn" class="w-100 btn btn-lg btn-primary">
+                        Войти
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<footer class="mt-auto text-center">
+    <hr>
+    <p>
+        © 2022 Copyright
+        <a href="https://github.com/deorz" style="color: rebeccapurple">
+            deorz<img src="/task_manager/static/img/github.svg"
+                      class="d-inline-block align-top">
+        </a>
+    </p>
+</footer>
+<script src="/task_manager/static/js/bootstrap.js"></script>
+<script src="/task_manager/static/js/app.js"></script>
+</body>
+</html>
